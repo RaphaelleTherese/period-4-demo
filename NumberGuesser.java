@@ -18,6 +18,7 @@ public class NumberGuesser
             numGuesser();
             
             int playAgain = 0;
+            //Play again should be fixed
             while(playAgain != 1 || playAgain != 2)
             {
                 System.out.println("Enter 1 to play again or 2 to quit");
@@ -31,7 +32,7 @@ public class NumberGuesser
     public static void numGuesser()
     {
         int guess = 0;
-        int num = (int)(Math.random() * 100 + 1);
+        int num = (int)((Math.random() * 100) + 1);
         while (guess != num) 
         {
             System.out.println("Guess a number between 1 and 100:");
